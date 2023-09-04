@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.home{
+    height: 100vh;
+    background: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url(./imgs/doctor-looking-camera-after-typing-computer-modern-private-hospital-clinic-working-consultation-room-while-nurse-back-is-talking-with-patient-glass-walls.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.navbar ul a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.navbar .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.navbar .login i{
+    color: white;
+    font-size: 1.5rem;
+}
+.navbar .list a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: .5rem;
+}
+.home .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    padding: 0 2rem;
+    width: 30rem;
+}
+.center h2{
+    color: white;
+    font-weight: 100;
+    font-size: .9rem;
+}
+.center h1{
+    color: white;
+    font-size: 3.3rem;
+    margin-top: .5rem;
+}
+.center p{
+    color: white;
+    font-weight: 100;
+    font-size: .8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.center a{
+    color: white;
+}
+.center .btn1{
+    background-color: blue;
+    padding: .7rem 2.5rem;
+    border-radius: 50px;
+}
+.center .btn2{
+    margin-left: 1.5rem;
+}
+.insights{
+    display: flex;
+    margin-top: 3rem;
+    gap: 3rem;
+    width: 40rem;
+}
+.insight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insight h3{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.insight h4{
+    color: white;
+    font-weight: 100;
+    font-size: .8rem;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width:850px){
+      
+    .navbar{
+        background-color: white;
+        position: fixed;
+        width: 90%;
+        box-shadow: 1px 1px 10px 8px blue;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        padding: 1rem 4rem;
+        right: -100%;
+        top: 100%;
+        transition: .5s ease-in-out;
+    }
+    .navbar .logo a{
+        color: blue;
+    }
+    .navbar .show{
+        right: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .navbar .login i{
+        font-size: 1.8rem;
+        color: blue;
+    }
+    .navbar ul a{
+        color: blue;
+        font-size: 1rem;
+    }
+
+    .center{
+        display: flex;
+        
+        
+       
+    }
+    .center h2{
+        margin-top: 1rem;
+    }
+    
+    .insights{
+        flex-direction: column;
+    }
+    .home{
+         background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        ;
+    }
+}
